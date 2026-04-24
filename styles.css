@@ -236,19 +236,27 @@ input,select,textarea{ font: inherit; color: inherit; background: none; border: 
   .hero__orb{ display: none; }
 }
 @media (max-width: 820px){
-  .hero__meta--tl{ top: 86px; }
-  .hero__meta--tr{ top: 86px; }
-  .hero__meta--bl{ bottom: 22px; }
+  .hero__meta--tl{ top: 78px; left: 16px; }
+  .hero__meta--tr{ top: 78px; right: 16px; padding: 7px 11px; }
+  .hero__meta--bl,
   .hero__meta--br{ display: none; }
-  .hero__sub{ grid-template-columns: 1fr; gap: 20px; }
-  .hero__sub p{ font-size: 15px; }
+  .hero__stage{ padding: 0 20px; gap: 32px; align-content: center; }
+  .hero__sub{ grid-template-columns: 1fr; gap: 22px; padding-top: 24px; }
+  .hero__sub p{ font-size: 15px; line-height: 1.55; }
+  .hero__ctas{ width: 100%; }
+  .hero__ctas .btn{ flex: 1; justify-content: center; min-width: 0; }
 }
 @media (max-width: 520px){
-  .hero__meta{ padding: 8px 11px; font-size: 10px; letter-spacing: .12em; }
+  .hero{ min-height: 100svh; }
+  .hero__meta{ padding: 7px 10px; font-size: 9.5px; letter-spacing: .14em; gap: 8px; }
   .hero__meta--tl span:last-child{ display: none; }
   .hero__meta-bar{ display: none; }
-  .hero__meta--tr span{ display: none; }
-  .hero__stage{ gap: 28px; padding: 0 20px; }
+  .hero__meta--tr span{ display: inline; }
+  .hero__stage{ padding: 0 18px; gap: 22px; align-content: center; }
+  .hero__mark{ overflow: visible; }
+  .hero__sub p{ font-size: 14px; line-height: 1.5; }
+  .hero__ctas{ flex-direction: column; gap: 10px; }
+  .hero__ctas .btn{ width: 100%; padding: 16px 20px; }
 }
 
 /* ---------------- BUTTON ---------------- */
