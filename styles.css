@@ -96,7 +96,7 @@ input,select,textarea{ font: inherit; color: inherit; background: none; border: 
 
 .nav__meta{ justify-self: end; display: inline-flex; gap: 18px; align-items: center; }
 .nav__meta .live{ display: inline-flex; align-items: center; gap: 8px; }
-.nav__meta .live i{ width: 6px; height: 6px; border-radius: 50%; background: #22c55e; animation: blink 1.4s var(--ease) infinite; }
+.nav__meta .live i{ width: 6px; height: 6px; border-radius: 50%; background: #22c55e; }
 .nav.is-dark .nav__meta .live i{ background: var(--hot); }
 @keyframes blink{ 50%{ opacity:.3; } }
 
@@ -153,7 +153,7 @@ input,select,textarea{ font: inherit; color: inherit; background: none; border: 
 .hero__meta-bar{ width: 16px; height: 1px; background: currentColor; opacity: .6; display: inline-block; }
 .hero__dot{
   width: 7px; height: 7px; border-radius: 50%; background: var(--hot);
-  box-shadow: 0 0 10px var(--hot); animation: blink 1.4s var(--ease) infinite;
+  box-shadow: 0 0 10px var(--hot);
   display: inline-block;
 }
 
@@ -269,7 +269,7 @@ input,select,textarea{ font: inherit; color: inherit; background: none; border: 
   .hero__m-kicker{ display: inline-flex; align-items: center; gap: 8px; color: rgba(236,235,228,.8); }
   .hero__m-kicker i{
     width: 6px; height: 6px; border-radius: 50%; background: var(--hot);
-    box-shadow: 0 0 8px var(--hot); animation: blink 1.4s var(--ease) infinite;
+    box-shadow: 0 0 8px var(--hot);
     display: inline-block;
   }
   .hero__m-est{ color: var(--btc); }
@@ -539,7 +539,7 @@ input,select,textarea{ font: inherit; color: inherit; background: none; border: 
   color: var(--hot); border: 1px solid rgba(198,255,61,.35);
   background: rgba(198,255,61,.06); backdrop-filter: blur(10px);
 }
-.btc__chip i{ width: 7px; height: 7px; border-radius: 50%; background: var(--hot); animation: blink 1.4s var(--ease) infinite; }
+.btc__chip i{ width: 7px; height: 7px; border-radius: 50%; background: var(--hot); }
 .btc__chip--sat{ color: var(--btc); border-color: rgba(247,147,26,.4); background: rgba(247,147,26,.08); }
 .btc__chip--sat strong{ color: var(--bone); font-weight: 500; font-variant-numeric: tabular-nums; }
 
@@ -665,7 +665,7 @@ input,select,textarea{ font: inherit; color: inherit; background: none; border: 
   color: var(--mute-2); margin-bottom: 22px;
 }
 .ticker__pulse{ display: inline-flex; gap: 8px; align-items: center; color: var(--hot); }
-.ticker__pulse i{ width: 8px; height: 8px; border-radius: 50%; background: var(--hot); animation: blink 1.6s infinite; }
+.ticker__pulse i{ width: 8px; height: 8px; border-radius: 50%; background: var(--hot); }
 
 .ticker__qr{
   display: grid; place-items: center; padding: 20px;
