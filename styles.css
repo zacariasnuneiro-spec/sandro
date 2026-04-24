@@ -164,9 +164,15 @@ input,select,textarea{ font: inherit; color: inherit; background: none; border: 
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  min-width: 0;
   display: grid;
   gap: clamp(28px, 5vh, 56px);
 }
+.hero__stage > *{ min-width: 0; }
+.hero__m{ min-width: 0; }
+.hero__m-title{ min-width: 0; word-break: keep-all; overflow-wrap: anywhere; }
+.hero__m-topline{ min-width: 0; }
+.hero__m-topline > span{ min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* SVG wordmark */
 .hero__mark{
@@ -309,10 +315,28 @@ input,select,textarea{ font: inherit; color: inherit; background: none; border: 
   .hero__ctas{ width: 100%; flex-direction: column; gap: 10px; }
   .hero__ctas .btn{ width: 100%; justify-content: center; padding: 16px 20px; }
 }
+/* small phones — iPhone SE / 12 mini / 13 mini */
 @media (max-width: 380px){
-  .hero__m-title{ font-size: 15.5vw; }
-  .hero__m-topline{ font-size: 10px; }
+  .hero__m-title{ font-size: 16vw; letter-spacing: -0.04em; }
+  .hero__m-topline{ font-size: 9.5px; letter-spacing: .12em; gap: 8px; }
   .hero__m-tags .hero__m-tag:first-child{ display: none; }
+  .hero__meta--tl{ top: 68px; left: 14px; padding: 6px 10px; }
+  .hero__meta--tr{ top: 68px; right: 14px; padding: 6px 10px; }
+  .hero__stage{ padding: 0 16px; gap: 18px; }
+  .hero__sub p{ font-size: 13.5px; }
+  .hero__ctas .btn{ padding: 14px 18px; font-size: 13px; }
+}
+
+/* medium phones 380-430 iPhone 14/15/16 */
+@media (min-width: 381px) and (max-width: 430px){
+  .hero__m-title{ font-size: 15.5vw; }
+  .hero__m-word--alt{ margin-left: .4em; }
+}
+
+/* large phones 430+ Pro Max */
+@media (min-width: 431px) and (max-width: 520px){
+  .hero__m-title{ font-size: 15vw; }
+  .hero__m-word--alt{ margin-left: .6em; }
 }
 
 /* ---------------- BUTTON ---------------- */
