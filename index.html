@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="es-SV">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sánchez / Cleaning Systems — El Salvador · Pagá con Bitcoin</title>
+<meta name="description" content="Limpieza profesional en El Salvador. Facturamos en dólares o bitcoin — Chivo, Strike, Muun, Blink. Cobertura nacional." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="noise" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <a href="#top" class="nav__mark" data-hover>
+    <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+      <rect x="3" y="3" width="26" height="26"/><path d="M9 16h14M16 9v14"/>
+    </svg>
+    <span>Sánchez/Cleaning</span>
+    <i class="sv-flag" aria-label="El Salvador">🇸🇻</i>
+  </a>
+  <nav class="nav__menu" aria-label="principal">
+    <a href="#servicios" data-hover><i>01</i><span>Servicios</span></a>
+    <a href="#trabajos" data-hover><i>02</i><span>Trabajos</span></a>
+    <a href="#fundador" data-hover><i>03</i><span>Fundador</span></a>
+    <a href="#pagar" data-hover><i>04</i><span>Pagar con ₿</span></a>
+  </nav>
+  <div class="nav__meta">
+    <span class="live"><i></i>Disponible hoy</span>
+    <span id="clock">— —:— SV</span>
+  </div>
+</header>
+
+<!-- ================= HERO — minimal luxury ================= -->
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=2400&q=85&auto=format&fit=crop" alt="" loading="eager" />
+    <div class="hero__veil"></div>
+  </div>
+
+  <!-- top-left : index -->
+  <div class="hero__meta hero__meta--tl">
+    <span>01</span><span class="hero__meta-bar"></span><span>SV · San Salvador</span>
+  </div>
+
+  <!-- top-right : live -->
+  <div class="hero__meta hero__meta--tr">
+    <i class="hero__dot"></i><span>En operación</span>
+  </div>
+
+  <!-- bottom-left : scroll -->
+  <div class="hero__meta hero__meta--bl">
+    <span>Seguí bajando</span>
+    <svg width="36" height="8" viewBox="0 0 36 8" fill="none"><path d="M0 4h34m0 0L30 1m4 3l-4 3" stroke="currentColor" stroke-width="1"/></svg>
+  </div>
+
+  <!-- bottom-right : coords -->
+  <div class="hero__meta hero__meta--br">
+    <span>13°41′N · 89°11′W</span>
+  </div>
+
+  <!-- CENTER : SVG wordmark -->
+  <div class="hero__stage">
+    <svg class="hero__mark" viewBox="0 0 1200 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sánchez Cleaning Systems — Limpieza profesional El Salvador">
+      <defs>
+        <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%"   stop-color="#ecebe4" stop-opacity="0"/>
+          <stop offset="45%"  stop-color="#ecebe4" stop-opacity=".3"/>
+          <stop offset="55%"  stop-color="#ecebe4" stop-opacity=".3"/>
+          <stop offset="100%" stop-color="#ecebe4" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+
+      <!-- overline rule + small label -->
+      <line x1="0" y1="26" x2="1200" y2="26" stroke="#ecebe4" stroke-opacity=".3" stroke-width="1"/>
+      <text x="0"    y="18" fill="#ecebe4" font-family="JetBrains Mono" font-size="13" letter-spacing="3.5" opacity=".7">SÁNCHEZ / CLEANING SYSTEMS</text>
+      <text x="1200" y="18" text-anchor="end" fill="#c6ff3d" font-family="JetBrains Mono" font-size="13" letter-spacing="3.5">EST. 2012 — BITCOIN READY ⚡</text>
+
+      <!-- wordmark row 1 : LIMPIEZA -->
+      <text x="0" y="230" font-family="Space Grotesk" font-weight="500"
+            font-size="240" letter-spacing="-10" fill="#ecebe4">LIMPIEZA</text>
+
+      <!-- wordmark row 2 : impecable. -->
+      <text x="1200" y="410" text-anchor="end" font-family="Space Grotesk"
+            font-style="italic" font-weight="300" font-size="200"
+            letter-spacing="-8" fill="#c6ff3d">impecable<tspan fill="#f7931a" font-style="normal" font-weight="500">.</tspan></text>
+
+      <!-- decorative short rules on row 2 left -->
+      <g stroke="#ecebe4" stroke-opacity=".35">
+        <line x1="0"   y1="320" x2="80"  y2="320"/>
+        <line x1="0"   y1="340" x2="140" y2="340"/>
+        <line x1="0"   y1="360" x2="60"  y2="360"/>
+      </g>
+      <text x="0" y="400" fill="#ecebe4" font-family="JetBrains Mono" font-size="13"
+            letter-spacing="3" opacity=".8">PARA</text>
+      <text x="0" y="420" fill="#ecebe4" font-family="JetBrains Mono" font-size="13"
+            letter-spacing="3" opacity=".8">EL SALVADOR</text>
+
+      <!-- shine sweep -->
+      <rect class="hero__shine" x="0" y="40" width="1200" height="380" fill="url(#shineGrad)"/>
+    </svg>
+
+    <!-- sub + ctas -->
+    <div class="hero__sub">
+      <p>Sistema de limpieza profesional para El Salvador. Residencial, corporativo, hotelería y post-obra. Facturación en USD o directamente en bitcoin sobre Lightning Network.</p>
+      <div class="hero__ctas">
+        <a href="#pagar" class="btn btn--white" data-hover>
+          <span class="btn__t">Pagar con Bitcoin</span>
+          <span class="btn__t btn__t--alt">Pagar con Bitcoin</span>
+          <i class="btn__arrow">↘</i>
+        </a>
+        <a href="#brief" class="btn btn--ghost-on-dark" data-hover>
+          <span class="btn__t">Solicitar cotización</span>
+          <span class="btn__t btn__t--alt">Solicitar cotización</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- rotating BTC ornament -->
+  <div class="hero__orb" aria-hidden="true">
+    <svg viewBox="0 0 200 200" width="140" height="140">
+      <defs>
+        <path id="orbPath" d="M100,100 m-84,0 a84,84 0 1,1 168,0 a84,84 0 1,1 -168,0"/>
+      </defs>
+      <circle cx="100" cy="100" r="40" fill="#f7931a"/>
+      <text fill="#0a0a08" font-family="Space Grotesk" font-weight="600" font-size="42" text-anchor="middle" x="100" y="116">₿</text>
+      <text fill="#ecebe4" font-family="JetBrains Mono" font-size="10" letter-spacing="5">
+        <textPath href="#orbPath">ACEPTAMOS BITCOIN ⚡ LIGHTNING NETWORK · SV · </textPath>
+      </text>
+    </svg>
+  </div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Residencial</span><span class="sep">*</span>
+    <span>Corporativo</span><span class="sep">*</span>
+    <span>Hotelería</span><span class="sep">*</span>
+    <span>Post-construcción</span><span class="sep">*</span>
+    <span>Sanitización</span><span class="sep">*</span>
+    <span>Restaurantes</span><span class="sep">*</span>
+    <span>Aceptamos ₿itcoin ⚡</span><span class="sep">*</span>
+    <span>Chivo / Strike / Muun / Blink</span><span class="sep">*</span>
+    <span>Residencial</span><span class="sep">*</span>
+    <span>Corporativo</span><span class="sep">*</span>
+    <span>Hotelería</span><span class="sep">*</span>
+    <span>Post-construcción</span><span class="sep">*</span>
+    <span>Sanitización</span><span class="sep">*</span>
+    <span>Restaurantes</span><span class="sep">*</span>
+    <span>Aceptamos ₿itcoin ⚡</span><span class="sep">*</span>
+    <span>Chivo / Strike / Muun / Blink</span><span class="sep">*</span>
+  </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section class="services" id="servicios">
+  <div class="services__head">
+    <span class="tag">[ 02 / Servicios ]</span>
+    <h2 class="h2">Seis líneas de trabajo.<br/><em>Un solo estándar.</em></h2>
+    <p class="lede">Cada servicio tiene protocolo escrito, equipo dedicado y supervisor asignado. Sin subcontratación, sin sorpresas, sin letra chica.</p>
+  </div>
+
+  <div class="svc-grid">
+    <article class="svc-card">
+      <div class="svc-card__img">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80&auto=format&fit=crop" alt="Sala residencial impecable" loading="lazy" />
+      </div>
+      <div class="svc-card__body">
+        <span class="svc-card__n">01</span>
+        <h3>Residencial</h3>
+        <p>Casas, apartamentos y condominios en Escalón, Santa Elena, Merliot, Antiguo Cuscatlán. Personal fijo asignado al hogar, confianza primero.</p>
+        <div class="svc-card__meta"><span>desde $45 / visita</span><span class="dot-sep">·</span><span>≈ 49k sats</span></div>
+      </div>
+    </article>
+
+    <article class="svc-card svc-card--dark">
+      <div class="svc-card__img">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&auto=format&fit=crop" alt="Oficina corporativa moderna" loading="lazy" />
+      </div>
+      <div class="svc-card__body">
+        <span class="svc-card__n">02</span>
+        <h3>Corporativo</h3>
+        <p>WTC, Torre Futura, Campus Insigne, Plaza Merliot. Contratos mensuales con SLA, reposición de insumos y reporte fotográfico diario en la app.</p>
+        <div class="svc-card__meta"><span>desde $320 / mes</span><span class="dot-sep">·</span><span>≈ 0.0035 ₿</span></div>
+      </div>
+    </article>
+
+    <article class="svc-card">
+      <div class="svc-card__img">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80&auto=format&fit=crop" alt="Lobby de hotel boutique" loading="lazy" />
+      </div>
+      <div class="svc-card__body">
+        <span class="svc-card__n">03</span>
+        <h3>Hotelería</h3>
+        <p>La Libertad, El Tunco, Las Flores, El Zonte. Rotaciones express entre huéspedes, blancos hotel y amenities. Check-out en menos de 3 horas.</p>
+        <div class="svc-card__meta"><span>desde $35 / turno</span><span class="dot-sep">·</span><span>≈ 38k sats</span></div>
+      </div>
+    </article>
+
+    <article class="svc-card">
+      <div class="svc-card__img">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80&auto=format&fit=crop" alt="Obra en construcción" loading="lazy" />
+      </div>
+      <div class="svc-card__body">
+        <span class="svc-card__n">04</span>
+        <h3>Post-construcción</h3>
+        <p>Entrega llave en mano tras obra. Retiro de polvo fino, residuos y pulido. Trabajamos con las principales constructoras salvadoreñas — Bolívar, Agrisal, Roble.</p>
+        <div class="svc-card__meta"><span>desde $180</span><span class="dot-sep">·</span><span>≈ 195k sats</span></div>
+      </div>
+    </article>
+
+    <article class="svc-card svc-card--dark">
+      <div class="svc-card__img">
+        <img src="https://images.unsplash.com/photo-1584744982491-665216d95f8b?w=800&q=80&auto=format&fit=crop" alt="Sanitización con equipo profesional" loading="lazy" />
+      </div>
+      <div class="svc-card__body">
+        <span class="svc-card__n">05</span>
+        <h3>Sanitización</h3>
+        <p>Nebulización, ozono y UV-C para clínicas, colegios y oficinas tras contingencias. Certificado post-servicio con NIT de la empresa.</p>
+        <div class="svc-card__meta"><span>desde $95</span><span class="dot-sep">·</span><span>≈ 103k sats</span></div>
+      </div>
+    </article>
+
+    <article class="svc-card">
+      <div class="svc-card__img">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80&auto=format&fit=crop" alt="Restaurante listo para servicio" loading="lazy" />
+      </div>
+      <div class="svc-card__body">
+        <span class="svc-card__n">06</span>
+        <h3>Restaurantes &amp; Retail</h3>
+        <p>Pupuserías, cafés de Santa Tecla, cadenas de retail. Turnos nocturnos para no interrumpir operación. Cumplimos HACCP y normas del Ministerio de Salud.</p>
+        <div class="svc-card__meta"><span>cotización</span><span class="dot-sep">·</span><span>USD / BTC</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= TRABAJOS / INDEX ================= -->
+<section class="work" id="trabajos">
+  <div class="work__head">
+    <span class="tag">[ 03 / Trabajos seleccionados ]</span>
+    <h2 class="h2"><em>Clientes</em> que ya confían<br/>— todos en El Salvador.</h2>
+  </div>
+
+  <ul class="idx">
+    <li class="idx__row" data-hover data-img="A">
+      <span class="idx__n">01</span>
+      <span class="idx__t">Torre Futura — pisos 14 al 22</span>
+      <span class="idx__k">Corporativo · San Salvador</span>
+      <span class="idx__y">2024 →</span>
+      <i class="idx__arrow">↗</i>
+    </li>
+    <li class="idx__row" data-hover data-img="B">
+      <span class="idx__n">02</span>
+      <span class="idx__t">Hotel Boutique — Playa El Tunco</span>
+      <span class="idx__k">Hotelería · La Libertad</span>
+      <span class="idx__y">2022 →</span>
+      <i class="idx__arrow">↗</i>
+    </li>
+    <li class="idx__row" data-hover data-img="C">
+      <span class="idx__n">03</span>
+      <span class="idx__t">Residencia privada — Col. Escalón</span>
+      <span class="idx__k">Residencial · SS</span>
+      <span class="idx__y">2019 →</span>
+      <i class="idx__arrow">↗</i>
+    </li>
+    <li class="idx__row" data-hover data-img="D">
+      <span class="idx__n">04</span>
+      <span class="idx__t">WTC Torre I &amp; II — Santa Elena</span>
+      <span class="idx__k">Corporativo · Antiguo Cuscatlán</span>
+      <span class="idx__y">2021 →</span>
+      <i class="idx__arrow">↗</i>
+    </li>
+    <li class="idx__row" data-hover data-img="E">
+      <span class="idx__n">05</span>
+      <span class="idx__t">Multiplaza — locales ancla</span>
+      <span class="idx__k">Retail · La Libertad</span>
+      <span class="idx__y">2023 →</span>
+      <i class="idx__arrow">↗</i>
+    </li>
+    <li class="idx__row" data-hover data-img="F">
+      <span class="idx__n">06</span>
+      <span class="idx__t">Entrega post-obra — Cumbres de Cuscatlán</span>
+      <span class="idx__k">Post-construcción · SS</span>
+      <span class="idx__y">2025</span>
+      <i class="idx__arrow">↗</i>
+    </li>
+    <li class="idx__row" data-hover data-img="G">
+      <span class="idx__n">07</span>
+      <span class="idx__t">Embajada europea — servicio diario</span>
+      <span class="idx__k">Alta seguridad · San Benito</span>
+      <span class="idx__y">2020 →</span>
+      <i class="idx__arrow">↗</i>
+    </li>
+  </ul>
+
+  <div class="idx__preview" id="preview" aria-hidden="true">
+    <div class="idx__preview-card" data-key="A"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"/><span>01 · Torre Futura</span></div>
+    <div class="idx__preview-card" data-key="B"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"/><span>02 · El Tunco</span></div>
+    <div class="idx__preview-card" data-key="C"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"/><span>03 · Escalón</span></div>
+    <div class="idx__preview-card" data-key="D"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"/><span>04 · WTC</span></div>
+    <div class="idx__preview-card" data-key="E"><img src="https://images.unsplash.com/photo-1555529902-5261145633bf?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"/><span>05 · Multiplaza</span></div>
+    <div class="idx__preview-card" data-key="F"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"/><span>06 · Cumbres</span></div>
+    <div class="idx__preview-card" data-key="G"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy"/><span>07 · Embajada</span></div>
+  </div>
+</section>
+
+<!-- ================= CLIENTES LOCALES ================= -->
+<section class="clients">
+  <span class="tag">[ Empresas que nos eligen ]</span>
+  <div class="clients__row">
+    <span>Grupo Roble</span><span>·</span>
+    <span>Agrisal</span><span>·</span>
+    <span>Hotel Real InterContinental</span><span>·</span>
+    <span>Torre Futura</span><span>·</span>
+    <span>WTC San Salvador</span><span>·</span>
+    <span>Banco Agrícola</span><span>·</span>
+    <span>Multiplaza</span><span>·</span>
+    <span>Grupo Q</span><span>·</span>
+    <span>Hospital de Diagnóstico</span>
+  </div>
+</section>
+
+<!-- ================= FUNDADOR ================= -->
+<section class="studio" id="fundador">
+  <div class="studio__col studio__col--left">
+    <span class="tag">[ 04 / El fundador ]</span>
+    <h2 class="h2 h2--light">
+      <em>Me fui</em> de<br/>
+      Chalate sin<br/>
+      nada. <em>Volví</em><br/>
+      con un <em>método</em>.
+    </h2>
+
+    <figure class="founder-card" aria-hidden="false">
+      <svg class="founder-card__mono" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg" aria-label="Monograma JS">
+        <defs>
+          <linearGradient id="monoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#c6ff3d"/>
+            <stop offset="1" stop-color="#7cb800"/>
+          </linearGradient>
+        </defs>
+        <rect x="10" y="10" width="320" height="320" fill="none" stroke="#0a0a08" stroke-width="1.5"/>
+        <rect x="22" y="22" width="296" height="296" fill="none" stroke="#0a0a08" stroke-opacity=".35" stroke-dasharray="3 4"/>
+        <text x="170" y="210" text-anchor="middle" font-family="Space Grotesk" font-weight="500" font-size="220" letter-spacing="-10" fill="#0a0a08">JS</text>
+        <text x="170" y="258" text-anchor="middle" font-family="JetBrains Mono" font-size="12" letter-spacing="5" fill="#0a0a08" opacity=".7">FUNDADOR · EST. 2012</text>
+        <g stroke="#0a0a08" stroke-width="1" fill="none">
+          <line x1="40" y1="40" x2="70" y2="40"/><line x1="40" y1="40" x2="40" y2="70"/>
+          <line x1="300" y1="40" x2="270" y2="40"/><line x1="300" y1="40" x2="300" y2="70"/>
+          <line x1="40" y1="300" x2="70" y2="300"/><line x1="40" y1="300" x2="40" y2="270"/>
+          <line x1="300" y1="300" x2="270" y2="300"/><line x1="300" y1="300" x2="300" y2="270"/>
+        </g>
+      </svg>
+      <figcaption class="founder-card__cap">
+        <span>Joel Sánchez</span>
+        <em>Chalatenango → Los Ángeles → San Salvador</em>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="studio__col studio__col--right">
+    <p>Joel salió de Chalatenango en los noventa. Cruzó, trabajó de lo que había, y terminó limpiando oficinas en Los Ángeles. Ahí aprendió que la limpieza, hecha bien, es una industria — no un oficio menor.</p>
+    <p>En 2012 regresó con una idea clara: <strong>profesionalizar el sector en El Salvador.</strong> Hoy <strong>Sánchez/Cleaning</strong> emplea formalmente a 180 salvadoreños, paga AFP e ISSS al día, y factura en dólares o en bitcoin — porque creemos que el país merece estar al frente, no atrás.</p>
+    <p>Cuando pagás con nosotros, pagás con quienes limpian: 1% de cada factura va a becas técnicas para familiares del equipo.</p>
+
+    <dl class="specs">
+      <div><dt>Equipo</dt><dd>180 colaboradores salvadoreños, 100% formales.</dd></div>
+      <div><dt>Cobertura</dt><dd>San Salvador · La Libertad · Santa Ana · San Miguel · Sonsonate.</dd></div>
+      <div><dt>Tecnología</dt><dd>App propia: check-in GPS, evidencia fotográfica, factura BTC.</dd></div>
+      <div><dt>Certificaciones</dt><dd>ISO 14001 · HACCP · Ministerio de Salud SV.</dd></div>
+      <div><dt>Origen</dt><dd>Chalatenango → Los Ángeles → San Salvador.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= PAGAR CON BITCOIN — hero feature ================= -->
+<section class="btc" id="pagar">
+  <!-- decorative grid lines -->
+  <div class="btc__grid-bg" aria-hidden="true"></div>
+
+  <!-- massive ornamental BTC mark -->
+  <svg class="btc__ornament" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <radialGradient id="btcGlow" cx=".5" cy=".5">
+        <stop offset="0"   stop-color="#f7931a" stop-opacity=".9"/>
+        <stop offset=".55" stop-color="#f7931a" stop-opacity=".12"/>
+        <stop offset="1"   stop-color="#f7931a" stop-opacity="0"/>
+      </radialGradient>
+      <path id="btcRing" d="M450,450 m-380,0 a380,380 0 1,1 760,0 a380,380 0 1,1 -760,0"/>
+      <path id="btcRing2" d="M450,450 m-300,0 a300,300 0 1,1 600,0 a300,300 0 1,1 -600,0"/>
+    </defs>
+    <rect width="900" height="900" fill="url(#btcGlow)"/>
+    <!-- concentric rings -->
+    <g fill="none" stroke="#f7931a" stroke-opacity=".22">
+      <circle cx="450" cy="450" r="440"/>
+      <circle cx="450" cy="450" r="380"/>
+      <circle cx="450" cy="450" r="300"/>
+      <circle cx="450" cy="450" r="220" stroke-opacity=".4"/>
+    </g>
+    <!-- rotating ticker text -->
+    <g class="btc__spin">
+      <text fill="#f7931a" font-family="JetBrains Mono" font-size="16" letter-spacing="8" opacity=".8">
+        <textPath href="#btcRing">⚡ LIGHTNING NETWORK · ACEPTAMOS BITCOIN EN EL SALVADOR · CHIVO · STRIKE · MUUN · BLINK · WOS · PHOENIX · ZEUS · </textPath>
+      </text>
+    </g>
+    <g class="btc__spin-rev">
+      <text fill="#c6ff3d" font-family="JetBrains Mono" font-size="12" letter-spacing="6" opacity=".7">
+        <textPath href="#btcRing2">SATS CONFIRMATION · ON-CHAIN · INSTANT SETTLEMENT · BITCOIN STANDARD · BTC/USD LIVE · </textPath>
+      </text>
+    </g>
+    <!-- center B -->
+    <g transform="translate(450,450)">
+      <circle r="140" fill="#f7931a"/>
+      <circle r="140" fill="none" stroke="#ecebe4" stroke-opacity=".3" stroke-width="2"/>
+      <text y="54" text-anchor="middle" font-family="Space Grotesk" font-weight="600" font-size="180" fill="#0a0a08">₿</text>
+    </g>
+    <!-- lightning bolts orbiting -->
+    <g fill="#c6ff3d">
+      <path transform="translate(450,60)" d="M0 0 L-14 22 L-2 24 L-10 48 L16 18 L4 16 L12 0 Z"/>
+      <path transform="translate(830,450) rotate(90)" d="M0 0 L-14 22 L-2 24 L-10 48 L16 18 L4 16 L12 0 Z"/>
+      <path transform="translate(450,830) rotate(180)" d="M0 0 L-14 22 L-2 24 L-10 48 L16 18 L4 16 L12 0 Z"/>
+      <path transform="translate(70,450) rotate(270)" d="M0 0 L-14 22 L-2 24 L-10 48 L16 18 L4 16 L12 0 Z"/>
+    </g>
+  </svg>
+
+  <header class="btc__head">
+    <div class="btc__head-top">
+      <span class="btc__chip"><i></i>Ledger · CoinGecko live</span>
+      <span class="btc__chip btc__chip--sat">1 ₿ = <strong id="chipRate">—</strong> USD</span>
+    </div>
+    <h2 class="btc__h">
+      <span class="btc__h-line">Aceptamos</span>
+      <span class="btc__h-line btc__h-line--btc">
+        <svg viewBox="0 0 24 24" width=".82em" height=".82em" fill="currentColor" aria-hidden="true"><path d="M14.24 10.56c-.31 1.24-2.24.61-2.84.45l.55-2.18c.6.15 2.61.44 2.29 1.73zm-.49 3.73c-.34 1.35-2.66.61-3.37.44l.6-2.41c.71.18 3.13.52 2.77 1.97zM19 11.27c.32-2.12-1.3-3.26-3.5-4.02L16.21 4l-1.74-.43-.71 2.85c-.46-.12-.93-.22-1.4-.32l.72-2.88L11.35 3l-.72 3.18c-.38-.09-.75-.17-1.11-.26l-2.4-.6-.46 1.86s1.29.3 1.26.31c.71.18.83.65.81 1.02L8 16c-.04.29-.23.74-.78.6.02.03-1.26-.32-1.26-.32L5.05 18.34l2.45.61c.46.12.9.24 1.34.35L8.11 22.5l1.74.43.71-2.85c.47.13.94.25 1.39.36l-.71 2.83 1.74.43.71-2.84c2.97.56 5.21.34 6.14-2.35.75-2.16-.04-3.41-1.6-4.22 1.14-.26 2-1.01 2.23-2.56z"/></svg>
+        bitcoin
+      </span>
+      <span class="btc__h-line btc__h-line--sub"><em>desde 2021.</em></span>
+    </h2>
+    <p>Moneda de curso legal en El Salvador. Facturamos en dólares o directamente en satoshis — liquidación en segundos sobre Lightning Network.</p>
+  </header>
+
+  <!-- why bitcoin - SVG feature row -->
+  <div class="btc__why">
+    <article class="btc__why-card">
+      <svg viewBox="0 0 60 60" class="btc__why-ico"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M30 6 L30 54"/><path d="M18 14 L30 6 L42 14"/><path d="M8 30 L30 30"/><circle cx="48" cy="30" r="4" fill="currentColor"/></g></svg>
+      <h3>Instantáneo</h3>
+      <p>Confirmación en segundos sobre Lightning. Sin esperar 3 días hábiles.</p>
+    </article>
+    <article class="btc__why-card">
+      <svg viewBox="0 0 60 60" class="btc__why-ico"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 24 L30 8 L46 24"/><path d="M30 8 L30 52"/><rect x="20" y="24" width="20" height="28" fill="none"/></g></svg>
+      <h3>Sin intermediarios</h3>
+      <p>Pago directo de tu wallet a la nuestra. Sin bancos, sin comisiones interbancarias.</p>
+    </article>
+    <article class="btc__why-card">
+      <svg viewBox="0 0 60 60" class="btc__why-ico"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="30" cy="30" r="22"/><path d="M30 14 L30 30 L42 38"/></g></svg>
+      <h3>24/7 · 365</h3>
+      <p>Pagá a cualquier hora. La red nunca cierra, ni feriados, ni fines de semana.</p>
+    </article>
+    <article class="btc__why-card">
+      <svg viewBox="0 0 60 60" class="btc__why-ico"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 30 L26 14 L26 22 L50 22 L50 38 L26 38 L26 46 Z" fill="currentColor" fill-opacity=".15"/></g></svg>
+      <h3>5% de descuento</h3>
+      <p>Si pagás en BTC, aplicamos 5% menos automáticamente. Sin letra chica.</p>
+    </article>
+  </div>
+
+  <div class="btc__grid">
+    <!-- CALCULATOR -->
+    <div class="btc__calc">
+      <div class="btc__calc-head">
+        <span class="tag tag--inv">Calculá tu factura</span>
+        <span class="ticker__pulse"><i></i>BTC/USD en vivo</span>
+      </div>
+
+      <label class="btc__input">
+        <span>Monto en USD</span>
+        <div class="btc__input-row">
+          <em>$</em>
+          <input id="amountInput" type="number" min="1" step="1" value="320" inputmode="decimal" />
+        </div>
+      </label>
+
+      <div class="btc__chips">
+        <button type="button" data-amount="45" data-hover>$45 · residencial</button>
+        <button type="button" data-amount="95" data-hover>$95 · sanitización</button>
+        <button type="button" data-amount="180" data-hover>$180 · post-obra</button>
+        <button type="button" data-amount="320" data-hover>$320 · oficina</button>
+        <button type="button" data-amount="1200" data-hover>$1 200 · torre</button>
+      </div>
+
+      <div class="btc__result">
+        <div>
+          <span class="tag tag--inv">Pagás</span>
+          <strong id="satsResult">— sats</strong>
+          <em id="btcResult">≈ 0.00000000 ₿</em>
+        </div>
+        <div class="btc__rate">
+          <span class="tag tag--inv">Cotización spot</span>
+          <strong id="rateResult">cargando…</strong>
+          <em id="rateSource">fuente: CoinGecko</em>
+        </div>
+      </div>
+
+      <!-- mini flow svg -->
+      <svg viewBox="0 0 560 60" class="btc__flow" aria-hidden="true">
+        <g font-family="JetBrains Mono" font-size="10" fill="#ecebe4">
+          <g transform="translate(30,30)">
+            <circle r="14" fill="none" stroke="#c6ff3d" stroke-width="1.5"/>
+            <text y="4" text-anchor="middle" fill="#c6ff3d">01</text>
+            <text y="34" text-anchor="middle" opacity=".7">MONTO</text>
+          </g>
+          <line x1="58" y1="30" x2="178" y2="30" stroke="#c6ff3d" stroke-dasharray="2 3" opacity=".5"/>
+          <g transform="translate(200,30)">
+            <circle r="14" fill="none" stroke="#c6ff3d" stroke-width="1.5"/>
+            <text y="4" text-anchor="middle" fill="#c6ff3d">02</text>
+            <text y="34" text-anchor="middle" opacity=".7">QR</text>
+          </g>
+          <line x1="228" y1="30" x2="348" y2="30" stroke="#c6ff3d" stroke-dasharray="2 3" opacity=".5"/>
+          <g transform="translate(370,30)">
+            <circle r="14" fill="none" stroke="#c6ff3d" stroke-width="1.5"/>
+            <text y="4" text-anchor="middle" fill="#c6ff3d">03</text>
+            <text y="34" text-anchor="middle" opacity=".7">WALLET</text>
+          </g>
+          <line x1="398" y1="30" x2="518" y2="30" stroke="#f7931a" stroke-dasharray="2 3"/>
+          <g transform="translate(540,30)">
+            <circle r="14" fill="#f7931a"/>
+            <text y="4" text-anchor="middle" fill="#0a0a08" font-weight="600">✓</text>
+            <text y="34" text-anchor="middle" fill="#f7931a" opacity=".8">LISTO</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- INVOICE + QR -->
+    <aside class="ticker">
+      <div class="ticker__top">
+        <span>Factura · Bitcoin</span>
+        <span class="ticker__pulse"><i></i>lista</span>
+      </div>
+
+      <div id="qrMount" class="ticker__qr" aria-label="Código QR de pago bitcoin"></div>
+
+      <div class="ticker__rows">
+        <div><span>Monto USD</span><strong id="invUsd">$320.00 USD</strong></div>
+        <div><span>Satoshis</span><strong id="invSats">— sats</strong></div>
+        <div><span>Red</span><strong>On-chain / LN ⚡</strong></div>
+        <div><span>Bloque</span><strong id="invBlock">—</strong></div>
+      </div>
+
+      <div class="ticker__actions">
+        <button class="btc__copy" id="copyUri" data-hover>
+          <span>Copiar URI</span>
+        </button>
+        <a class="btc__copy btc__copy--alt" id="openWallet" href="#" data-hover>
+          <span>Abrir wallet →</span>
+        </a>
+      </div>
+
+      <p class="ticker__foot">Escaneá el QR con cualquier wallet Bitcoin o Lightning. El monto se pre-completa automáticamente.</p>
+    </aside>
+  </div>
+
+  <!-- wallets row with SVG logomarks -->
+  <div class="btc__wallets">
+    <span class="tag tag--inv">Wallets compatibles en El Salvador</span>
+    <ul>
+      <li>
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#ecebe4"/><text x="20" y="27" text-anchor="middle" font-family="Space Grotesk" font-weight="600" font-size="18" fill="#0a0a08">C</text></svg>
+        <span>Chivo</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#f7931a"/><path d="M14 10 L24 10 L30 20 L24 30 L14 30 L20 20 Z" fill="#0a0a08"/></svg>
+        <span>Strike</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#0a0a08" stroke="#ecebe4" stroke-opacity=".2"/><circle cx="20" cy="20" r="10" fill="none" stroke="#c6ff3d" stroke-width="2"/><circle cx="20" cy="20" r="4" fill="#c6ff3d"/></svg>
+        <span>Muun</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#c6ff3d"/><path d="M18 10 L14 22 L19 22 L17 30 L26 18 L21 18 L23 10 Z" fill="#0a0a08"/></svg>
+        <span>Blink</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#0a0a08" stroke="#ecebe4" stroke-opacity=".2"/><text x="20" y="27" text-anchor="middle" font-family="Space Grotesk" font-weight="600" font-size="18" fill="#ecebe4">⚡</text></svg>
+        <span>Wallet of Satoshi</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#1a1a14"/><path d="M10 20 L20 10 L30 20 L20 30 Z" fill="none" stroke="#f7931a" stroke-width="2"/></svg>
+        <span>Phoenix</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#ecebe4"/><path d="M14 14 h12 v4 h-8 v3 h6 v4 h-6 v5 h-4 z" fill="#0a0a08"/></svg>
+        <span>Zeus</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#0a0a08" stroke="#c6ff3d" stroke-opacity=".6"/><circle cx="20" cy="20" r="8" fill="#c6ff3d"/></svg>
+        <span>Breez</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= BRIEF ================= -->
+<section class="brief" id="brief">
+  <div class="brief__left">
+    <span class="tag">[ 06 / Cotizar ]</span>
+    <h2 class="h2">
+      Dejanos<br/>
+      <em>tu espacio.</em><br/>
+      <em>Contestamos</em><br/>
+      hoy mismo.
+    </h2>
+    <ul class="brief__list">
+      <li><span>A.</span>Visita técnica gratis en 48 h — Gran San Salvador.</li>
+      <li><span>B.</span>Propuesta con KPI, cronograma y precio en USD + sats.</li>
+      <li><span>C.</span>Si pagás en bitcoin, 5% de descuento automático.</li>
+      <li><span>D.</span>Sin contratos tramposos. Cancelás cuando querás.</li>
+    </ul>
+  </div>
+
+  <form class="brief__form" id="quoteForm" novalidate>
+    <div class="row">
+      <label><span class="tag tag--sm">01 / Nombre</span>
+        <input type="text" name="name" required placeholder="María Alvarenga" />
+      </label>
+      <label><span class="tag tag--sm">02 / Empresa (opcional)</span>
+        <input type="text" name="company" placeholder="— si aplica —" />
+      </label>
+    </div>
+    <div class="row">
+      <label><span class="tag tag--sm">03 / Email</span>
+        <input type="email" name="email" required placeholder="tu@correo.com" />
+      </label>
+      <label><span class="tag tag--sm">04 / WhatsApp</span>
+        <input type="tel" name="phone" required placeholder="+503 7000 0000" />
+      </label>
+    </div>
+    <div class="row">
+      <label><span class="tag tag--sm">05 / Departamento</span>
+        <select name="depto" required>
+          <option value="">— Seleccioná —</option>
+          <option>San Salvador</option><option>La Libertad</option>
+          <option>Santa Ana</option><option>San Miguel</option>
+          <option>Sonsonate</option><option>La Paz</option>
+          <option>Cuscatlán</option><option>Usulután</option>
+          <option>Otro</option>
+        </select>
+      </label>
+      <label><span class="tag tag--sm">06 / Tipo de servicio</span>
+        <select name="service" required>
+          <option value="">— Seleccioná —</option>
+          <option>Residencial</option><option>Corporativo</option>
+          <option>Hotelería</option><option>Post-construcción</option>
+          <option>Sanitización</option><option>Restaurantes / Retail</option>
+        </select>
+      </label>
+    </div>
+    <label><span class="tag tag--sm">07 / Detalle del espacio</span>
+      <textarea name="msg" rows="3" placeholder="Metros cuadrados aproximados, frecuencia, particularidades…"></textarea>
+    </label>
+
+    <div class="brief__foot">
+      <label class="chk">
+        <input type="checkbox" id="btcPay" />
+        <span class="chk__box" aria-hidden="true"></span>
+        <span>Quiero pagar en bitcoin <i>(−5%)</i></span>
+      </label>
+      <button class="btn btn--big" type="submit" data-hover>
+        <span class="btn__t">Enviar solicitud</span>
+        <span class="btn__t btn__t--alt">Enviar solicitud</span>
+        <i class="btn__arrow">↘</i>
+      </button>
+    </div>
+  </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="foot__huge" aria-hidden="true">
+    <span>SÁNCHEZ</span><span>/CLEANING</span>
+  </div>
+
+  <div class="foot__cols">
+    <div>
+      <span class="tag">[ Contacto ]</span>
+      <a href="mailto:hola@sanchezcleaning.sv" data-hover>hola@sanchezcleaning.sv</a>
+      <a href="tel:+50322000000" data-hover>+503 2200 0000</a>
+      <a href="https://wa.me/50370000000" data-hover>WhatsApp 24/7 ↗</a>
+    </div>
+    <div>
+      <span class="tag">[ Oficina ]</span>
+      <p>Calle La Reforma #144<br/>Colonia San Benito<br/>San Salvador, El Salvador</p>
+    </div>
+    <div>
+      <span class="tag">[ Redes ]</span>
+      <a href="#" data-hover>Instagram ↗</a>
+      <a href="#" data-hover>LinkedIn ↗</a>
+      <a href="#" data-hover>TikTok ↗</a>
+    </div>
+    <div>
+      <span class="tag">[ Ledger ]</span>
+      <p>1 ₿ ≈ <span id="footRate">cargando…</span><br/>Lightning node: online ⚡<br/>Bloque actual: <span id="footBlock">—</span></p>
+    </div>
+  </div>
+
+  <div class="foot__bar">
+    <span>© 2012—<span id="yr">2026</span> Sánchez/Cleaning Systems S.A. de C.V. · NIT 0614-000000-000-0</span>
+    <span>Hecho en El Salvador 🇸🇻 · pagá con ₿ ⚡</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
